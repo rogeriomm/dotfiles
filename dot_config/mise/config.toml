@@ -1,0 +1,12 @@
+[tools]
+argocd = "latest"
+bat = "latest"
+chezmoi = "latest"
+fzf = "latest"
+helm = "latest"
+k3s = "latest"
+k9s = "latest"
+kubectl = "latest"
+neovim = "latest"
+yq = "latest"
+zoxide = "latest"
