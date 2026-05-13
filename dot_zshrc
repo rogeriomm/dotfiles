@@ -1,4 +1,9 @@
+<<<<<<< Updated upstream
 eval "$(~/.local/bin/mise activate zsh)"
+=======
+eval "$(/var/home/rogermm/.local/bin/mise activate zsh)"
+
+>>>>>>> Stashed changes
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
@@ -71,7 +76,11 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+<<<<<<< Updated upstream
 plugins=(git, kubectl eza)
+=======
+plugins=(git kubectl eza)
+>>>>>>> Stashed changes
 
 source $ZSH/oh-my-zsh.sh
 
@@ -109,10 +118,16 @@ export KUBECONFIG=$HOME/.kube/config.yaml
 
 alias vi=nvim
 
+<<<<<<< Updated upstream
 eval "$(starship init zsh)"
 source <(fzf --zsh)
 eval "$(zoxide init zsh)"
 eval "$(k3s completion zsh)"
+=======
+
+
+
+>>>>>>> Stashed changes
 
 if [[ -d "$HOME/.pyenv" ]]; then 
   export PYENV_ROOT="$HOME/.pyenv"
