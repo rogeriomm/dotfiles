@@ -129,6 +129,10 @@ if command -v k3s >/dev/null 2>&1; then
   eval "$(k3s completion zsh)"
 fi
 
+if command -v chezmoi >/dev/null 2>&1; then
+  eval "$(chezmoi completion zsh)"
+fi
+
 if [[ -d "$HOME/.pyenv" ]]; then 
   export PYENV_ROOT="$HOME/.pyenv"
   [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
