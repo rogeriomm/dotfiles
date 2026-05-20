@@ -1,5 +1,14 @@
+# ~/.config/starship.toml
+
 # Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
+
+
+# Use custom format
+#format = '''
+#[┌───────────────────>](bold green)
+#[│](bold green)$directory$rust$package
+#[└─>](bold green) '''
 
 add_newline = true
 
@@ -10,3 +19,14 @@ success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set
 # Disable the package module, hiding it from the prompt completely
 [package]
 disabled = false
+
+[aws]
+format = 'on [$symbol($profile )(\($region\) )]($style)'
+style = 'bold blue'
+symbol = '🅰 '
+[aws.region_aliases]
+ap-southeast-2 = 'au'
+us-east-1 = 'va'
+[aws.profile_aliases]
+CompanyGroupFrobozzOnCallAccess = 'Frobozz'
+
