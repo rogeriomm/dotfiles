@@ -146,3 +146,5 @@ export AWS_PAGER=""
 export EDITOR=nvim
 export VISUAL=$EDITOR
 
+alias btop="btop --force-utf"
+
