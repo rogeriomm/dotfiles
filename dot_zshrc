@@ -148,3 +148,5 @@ export VISUAL=$EDITOR
 
 alias btop="btop --force-utf"
 
+set -o vi
+
