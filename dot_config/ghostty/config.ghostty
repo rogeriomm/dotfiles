@@ -1,3 +1,8 @@
 theme = Adventure
 
+font-family = JetBrainsMono Nerd Font
+
+font-feature = +liga
+font-feature = +calt
+font-feature = +dlig
 
