@@ -152,7 +152,7 @@ set -o vi
 
 export ANSIBLE_LANGUAGE_SERVER_PATH="$HOME/.local/share/mise/installs/node/latest/bin/ansible-language-server"
 
-if [[ -f "$HOME/bin/github-token.txt" ]]; then
-  export GITHUB_TOKEN=$(cat "$HOME/bin/github-token.txt")
+if [[ -f "$HOME/.config/secrets/github.zsh" ]]; then
+  source "$HOME/.config/secrets/github.zsh"
 fi
 
