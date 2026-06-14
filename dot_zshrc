@@ -156,3 +156,8 @@ if [[ -f "$HOME/.config/secrets/github.zsh" ]]; then
   source "$HOME/.config/secrets/github.zsh"
 fi
 
+if mise ls --missing --no-header | grep -q .; then
+  echo "Some mise packages are not installed"
+  mise install
+fi
+
