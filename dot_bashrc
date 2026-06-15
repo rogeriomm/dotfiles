@@ -120,7 +120,5 @@ fi
 export PATH=$PATH:$HOME/.local/bin
 export KUBECONFIG=$HOME/.kube/config.yaml
 
-echo kubectl get pods -A 
-kubectl get pods -A 
 eval "$(~/.local/bin/mise activate bash)"
-. "$HOME/.cargo/env"
+
