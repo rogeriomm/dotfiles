@@ -31,11 +31,11 @@ case "$(hostname)" in
   vm.pve.worldl.xpt)
     printf "󰒋"
     ;;
-  server)
+  vm.world1l.worldl.xpt)
     printf "󰒋"
     ;;
   apple)
-    print ""
+    print "󰀵"
     ;;    
   *)
     printf "󰇄 "
