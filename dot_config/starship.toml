@@ -5,6 +5,7 @@
 
 format = """\
 [](bg:#030B16 fg:#7DF9AA)\
+${custom.toolbox_prefix}\
 ${custom.machine_icon}\
 (bg:#7DF9AA fg:#090c0c)\
 [](fg:#7DF9AA bg:#1C3A5E)\
@@ -18,6 +19,15 @@ $git_metrics\
 [](fg:#FCF392 bg:#030B16)\
 $character\
 """
+
+[custom.toolbox_prefix]
+command = 'printf " "'
+when = 'test -f /run/.toolboxenv'
+shell = ["sh"]
+#style = "fg:#E78CFF"
+#style = "bg:#7DF9AA fg:#090c0c"
+style = "bg:#7DF9AA fg:#E78CFF"
+format = "[$output]($style)"
 
 [custom.machine_icon]
 command = '''
