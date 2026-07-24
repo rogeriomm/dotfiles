@@ -161,3 +161,5 @@ if mise ls --missing --no-header | grep -q .; then
   mise install
 fi
 
+export DATABRICKS_AUTH_STORAGE=plaintext
+
