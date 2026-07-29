@@ -140,7 +140,7 @@ if [[ -d "$HOME/.pyenv" ]]; then
   eval "$(pyenv init - bash)"
 fi
 
-export AWS_CA_BUNDLE=~/.aws/ca.crt
+#export AWS_CA_BUNDLE=~/.aws/ca.crt
 export AWS_PAGER=""
 
 export EDITOR=nvim
