@@ -23,8 +23,5 @@ gum = "latest"
 pipx = "latest"
 jq = "latest"
 java = ["jetbrains-11.0.16-b2043.64", "17"]
-claude = "latest"
-claude-code = "latest"
-claude-powerline = "latest"
 aws-cli = { version = "latest", symlink_bins = "true" }
 
