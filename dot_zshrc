@@ -1,9 +1,13 @@
 eval "$(~/.local/bin/mise activate zsh)"
 
+autoload -Uz compinit
+compinit
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 if [[ -d "$HOME/.oh-my-zsh" ]]; then
+
   # Path to your Oh My Zsh installation.
   export ZSH="$HOME/.oh-my-zsh"
 
@@ -74,6 +78,7 @@ if [[ -d "$HOME/.oh-my-zsh" ]]; then
   # Example format: plugins=(rails git textmate ruby lighthouse)
   # Add wisely, as too many plugins slow down shell startup.
   plugins=(kubectl helm mise eza podman git)
+
 
   source $ZSH/oh-my-zsh.sh
 fi
